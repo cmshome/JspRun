@@ -1,17 +1,18 @@
 package cn.jsprun.dao.impl;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import org.hibernate.HibernateException;
-import org.hibernate.Query;
-import org.hibernate.Session;
-import org.hibernate.Transaction;
 import cn.jsprun.dao.AttachmentsDao;
 import cn.jsprun.domain.Attachments;
 import cn.jsprun.domain.Threads;
 import cn.jsprun.struts.form.AttachmentsForm;
 import cn.jsprun.utils.Common;
 import cn.jsprun.utils.HibernateUtil;
+import org.hibernate.HibernateException;
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 public class AttachmentsDaoImple implements AttachmentsDao {
 	public Integer deleteArray(String[] aids) {
 		Integer deleteNumber = -1;
@@ -111,7 +112,7 @@ public class AttachmentsDaoImple implements AttachmentsDao {
 	}
 	@SuppressWarnings("unchecked")
 	public List<Attachments> findAttchmentsByJs(String hql, int startrow, int maxrow) {
-		List<Attachments> attlist = new ArrayList<Attachments>();
+		List<Attachments> attlist = new ArrayList<>();
 		Transaction tr = null;
 		try{
 			Session session = HibernateUtil.getSessionFactory().getCurrentSession();
