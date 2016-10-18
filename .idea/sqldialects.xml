@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/WebRoot/install/jsprun_zh_CN.sql" dialect="MySQL" />
+  </component>
+</project>

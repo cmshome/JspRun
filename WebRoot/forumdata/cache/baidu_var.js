@@ -1,0 +1,1 @@
+var baidu_host="localhost:8080";var baidu_charset="UTF-8";var baidu_hl="null";var baidu_lr="";

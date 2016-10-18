@@ -1,0 +1,40 @@
+/*
+Offical Style for JspRun!(R)
+URL: http://www.jsprun.net
+(C) 2007-2011 JspRun Inc.
+<style type="text/css">
+*/
+
+
+
+.mainbox thead.category th, .mainbox thead.category td { background: transparent; background-image: none; background-repeat: no-reapeat; padding: 2px 5px; line-height: 25px; color: #FFF; }
+	.mainbox thead.category tr { background: #F90 url("../.././images/Beijing2008/cat_bg.gif"); background-repeat: no-repeat; }
+	* html .mainbox thead.category tr th { background: #F90 url("../.././images/Beijing2008/cat_bg.gif"); background-repeat: no-repeat; }
+	*+html .mainbox thead.category tr th { background: #F90 url("../.././images/Beijing2008/cat_bg.gif"); background-repeat: no-repeat; }
+	* html .mainbox thead.category td  { background: #FF9900; }
+	*+html .mainbox thead.category td { background: #FF9900; }
+	thead.category .caption { text-indent: 6em; }
+.mainbox thead.separation th, .mainbox thead.separation td { background-color: #F5F5F0; }
+.footoperation { background-color: #F5F5F0; }
+
+.forumlist tbody tr { background: url(../.././images/Beijing2008/altbg1.gif) repeat-x 0 0; }
+	.forumlist tbody tr:hover { background-image: url(../.././images/Beijing2008/altbg2.gif); }
+	.forumlist tbody th, .forumlist tbody td { padding: 8px 5px; }
+	.forumlist tbody th, .forumlist tbody td, .forumlist tbody tr:hover th, .forumlist tbody tr:hover td { background-color: transparent; }
+			* html .forumlist tbody th { background-image: url(../.././images/Beijing2008/forum1.gif); background-position: 0 0 }
+			*+html .forumlist tbody th { background-image: url(../.././images/Beijing2008/forum1.gif); background-position: 0 0 }
+			*+html .forumlist tbody th:hover { background-image: url(../.././images/Beijing2008/forum1hover.gif); background-position: 0 0 }
+			* html .forumlist tbody th.new { background-image: url(../.././images/Beijing2008/forum2.gif); background-position: 0 0 }
+			*+html .forumlist tbody th.new { background-image: url(../.././images/Beijing2008/forum2.gif); background-position: 0 0 }
+			*+html .forumlist tbody th:hover.new { background-image: url(../.././images/Beijing2008/forum2hover.gif); background-position: 0 0 }
+
+		.forumlist tbody td { border-left: 1px solid #FFF !important; }
+
+.viewthread h1, .content .mainbox h1 { border-bottom: 1px solid #E2E2E2; }
+
+.headertabs { background: #FFF none; margin-bottom: 0; }
+	.headertabs li.current, .msgtabs strong { background-color: #F5F5F0; }
+		.msgtabs strong { border-bottom-color: #F5F5F0 }
+	.content .mainbox thead th, .content .mainbox thead td { background-color: #F5F5F0; }
+
+button { background: #F5F5F0; border-color: #E2E2E2 #C1C1C1 #C1C1C1 #E2E2E2; }
