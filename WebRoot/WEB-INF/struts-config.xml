@@ -100,8 +100,8 @@
 			<forward name="usergroupsinfo" path="/admin/page/members/usergroupsinfo.jsp"/>
 			<forward name="ranks" path="/admin/page/members/ranks.jsp"/>
 			<forward name="userproject" path="/admin/page/members/userproject.jsp"/>
-			<forward name="toeditmember" path="/admin/page/members/editextmember.jsp"></forward>
-			<forward name="banmember" path="/admin/page/members/banmember.jsp"></forward>
+			<forward name="toeditmember" path="/admin/page/members/editextmember.jsp"/>
+			<forward name="banmember" path="/admin/page/members/banmember.jsp"/>
 		</action>
 		
 		<action path="/extendsAction" parameter="action" type="cn.jsprun.struts.action.ExtendsAction" scope="request" validate="false">
@@ -171,7 +171,7 @@
 			
 			<forward name="toforumrecommend" path="/admin/page/modthreads/forumrecommend.jsp"/>
 			
-			<forward name="toCensor" path="/admin/page/main.jsp?action=censor"></forward>
+			<forward name="toCensor" path="/admin/page/main.jsp?action=censor"/>
 			<forward name="towords" path="/admin/page/modthreads/censor.jsp"/>
 			
 			<forward name="lengiserror" path="/admin/page/modthreads/lengiserror.jsp"/>
@@ -252,7 +252,7 @@
 			<forward name="jscoustemsetting" path="/admin/page/counter/jscustomsetting.jsp"/>
 		</action>
 		<action path="/space" parameter="action" type="cn.jsprun.struts.foreg.actions.SpacesAction" validate="false">
-			<forward name="tospace" path="/templates/default/space.jsp"></forward>
+			<forward name="tospace" path="/templates/default/space.jsp"/>
 			<forward name="tospacemodule" path="/templates/default/memcp_spacemodule.jsp"/>
 			<forward name="touserinfo" path="/templates/default/space_viewpro.jsp"/>
 			<forward name="tomyblogs" path="/templates/default/space_myblogs.jsp"/>
@@ -341,7 +341,7 @@
 			<forward name="tosearchbytype" path="/templates/default/searchbytype.jsp"/>
 			<forward name="searchresult" path="/templates/default/search_result.jsp"/>
 			<forward name="tosearchids" path="/search.jsp?action=search"/>
-			<forward name="search_type" path="/templates/default/search_type.jsp"></forward>
+			<forward name="search_type" path="/templates/default/search_type.jsp"/>
 		</action>
 		
 		<action path="/tags" parameter="actions" type="cn.jsprun.struts.foreg.actions.TagsAction" validate="false">
@@ -459,36 +459,36 @@
 		</action>
 		<action path="/domain" type="cn.jsprun.domainmanage.DomainManageAction" parameter="action" validate="false"/>
 		
-		<action path="/redirect" parameter="action" type="cn.jsprun.struts.foreg.actions.RedirectManageAction" scope="request" validate="false" ></action>
-		<action path="/sitemap" parameter="action" type="cn.jsprun.struts.foreg.actions.SitemapAction" validate="false"></action>
+		<action path="/redirect" parameter="action" type="cn.jsprun.struts.foreg.actions.RedirectManageAction" scope="request" validate="false" />
+		<action path="/sitemap" parameter="action" type="cn.jsprun.struts.foreg.actions.SitemapAction" validate="false"/>
 		<action path="/archiver" type="cn.jsprun.struts.foreg.actions.Archiver" parameter="actionMethod" validate="false">
-			<forward name="index_inc" path="/archiver/include/index_inc.jsp"></forward>
-			<forward name="forum_inc" path="/archiver/include/forum_inc.jsp"></forward>
-			<forward name="thread_inc" path="/archiver/include/thread_inc.jsp"></forward>
+			<forward name="index_inc" path="/archiver/include/index_inc.jsp"/>
+			<forward name="forum_inc" path="/archiver/include/forum_inc.jsp"/>
+			<forward name="thread_inc" path="/archiver/include/thread_inc.jsp"/>
 		</action>
 		<action path="/rss" type="cn.jsprun.struts.foreg.actions.RssAction">
-			<forward name="rss_inc" path="/rss_inc.jsp"></forward>
+			<forward name="rss_inc" path="/rss_inc.jsp"/>
 		</action>
 		<action path="/wap" type="cn.jsprun.struts.foreg.actions.WapAction" parameter="actionMethod" validate="false">
-			<forward name="home" path="/wap/include/home.jsp"></forward>
-			<forward name="login" path="/wap/include/login.jsp"></forward>
-			<forward name="register" path="/wap/include/register.jsp"></forward>
-			<forward name="showFOT" path="/wap/include/forums_threads.jsp"></forward>
-			<forward name="thread" path="/wap/include/thread.jsp"></forward>
-			<forward name="goto" path="/wap/include/goto.jsp"></forward>
-			<forward name="newThread" path="/wap/include/newthread.jsp"></forward>
-			<forward name="newReply" path="/wap/include/newreply.jsp"></forward>
-			<forward name="my" path="/wap/include/my.jsp"></forward>
-			<forward name="mycollection" path="/wap/include/mycollection.jsp"></forward>
-			<forward name="myphone" path="/wap/include/myphone.jsp"></forward>
-			<forward name="search" path="/wap/include/search.jsp"></forward>
-			<forward name="searchresult" path="/wap/include/searchresult.jsp"></forward>
-			<forward name="stats" path="/wap/include/stats.jsp"></forward>
-			<forward name="pm" path="/wap/include/pm.jsp"></forward>
-			<forward name="pmlist" path="/wap/include/pmlist.jsp"></forward>
-			<forward name="pmview" path="/wap/include/pmview.jsp"></forward>
-			<forward name="pmsend" path="/wap/include/pmsend.jsp"></forward>
-			<forward name="accessdenied" path="/wap/include/accessdenied.jsp"></forward>
+			<forward name="home" path="/wap/include/home.jsp"/>
+			<forward name="login" path="/wap/include/login.jsp"/>
+			<forward name="register" path="/wap/include/register.jsp"/>
+			<forward name="showFOT" path="/wap/include/forums_threads.jsp"/>
+			<forward name="thread" path="/wap/include/thread.jsp"/>
+			<forward name="goto" path="/wap/include/goto.jsp"/>
+			<forward name="newThread" path="/wap/include/newthread.jsp"/>
+			<forward name="newReply" path="/wap/include/newreply.jsp"/>
+			<forward name="my" path="/wap/include/my.jsp"/>
+			<forward name="mycollection" path="/wap/include/mycollection.jsp"/>
+			<forward name="myphone" path="/wap/include/myphone.jsp"/>
+			<forward name="search" path="/wap/include/search.jsp"/>
+			<forward name="searchresult" path="/wap/include/searchresult.jsp"/>
+			<forward name="stats" path="/wap/include/stats.jsp"/>
+			<forward name="pm" path="/wap/include/pm.jsp"/>
+			<forward name="pmlist" path="/wap/include/pmlist.jsp"/>
+			<forward name="pmview" path="/wap/include/pmview.jsp"/>
+			<forward name="pmsend" path="/wap/include/pmsend.jsp"/>
+			<forward name="accessdenied" path="/wap/include/accessdenied.jsp"/>
 		</action>
 		<action path="/jscript" type="cn.jsprun.struts.foreg.actions.JavaScriptAction" parameter="action" scope="request" validate="false"/>
 		<action path="/notify" validate="false" type="cn.jsprun.struts.foreg.actions.NotifyAction" parameter="action"/>
