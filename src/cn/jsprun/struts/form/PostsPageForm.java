@@ -1,16 +1,14 @@
 package cn.jsprun.struts.form;
+import cn.jsprun.dao.DataBaseDao;
+import cn.jsprun.utils.BeanFactory;
+import cn.jsprun.utils.Common;
+import org.apache.commons.lang.StringUtils;
+import org.apache.struts.util.MessageResources;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
-import org.apache.commons.lang.StringUtils;
-import org.apache.struts.util.MessageResources;
-import org.hibernate.Session;
-import org.hibernate.Transaction;
-import cn.jsprun.dao.DataBaseDao;
-import cn.jsprun.utils.BeanFactory;
-import cn.jsprun.utils.Common;
-import cn.jsprun.utils.HibernateUtil;
+
 public class PostsPageForm implements java.io.Serializable{
 	private static final long serialVersionUID = -4796143374983963539L;
 	private DataBaseDao databaseDao = (DataBaseDao) BeanFactory.getBean("dataBaseDao");

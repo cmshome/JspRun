@@ -1,9 +1,11 @@
 package cn.jsprun.struts.form;
-import java.util.List;
+import cn.jsprun.utils.HibernateUtil;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import cn.jsprun.utils.HibernateUtil;
+
+import java.util.List;
+
 public class PageForm implements java.io.Serializable{
 	private static final long serialVersionUID = 7856051824324464936L;
 	public static final String TOTALPAGE = "totalpage";

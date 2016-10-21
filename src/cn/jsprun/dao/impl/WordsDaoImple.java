@@ -1,15 +1,17 @@
 package cn.jsprun.dao.impl;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import cn.jsprun.dao.WordsDao;
+import cn.jsprun.domain.Words;
+import cn.jsprun.struts.form.PageForm;
+import cn.jsprun.utils.HibernateUtil;
 import org.hibernate.HibernateException;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import cn.jsprun.dao.WordsDao;
-import cn.jsprun.domain.Words;
-import cn.jsprun.utils.HibernateUtil;
-import cn.jsprun.struts.form.PageForm;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 public class WordsDaoImple implements WordsDao {
 	public WordsDaoImple() {
 	}

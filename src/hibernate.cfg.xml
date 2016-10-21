@@ -3,6 +3,7 @@
 <hibernate-configuration>
 	<session-factory>
 		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<!-- 配置数据库的方言,通过方言,让计算机知道连接的是哪种数据库 -->
 		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
 		<property name="hibernate.connection.provider_class">org.hibernate.connection.C3P0ConnectionProvider</property>
     	
