@@ -37,6 +37,12 @@ public final class HibernateUtil {
 					Configuration configuration = new Configuration();
 					configuration=configuration.configure("hibernate.cfg.xml");
 					configuration=configuration.addProperties(extraProperties);
+							 /*
+							  * 获取sessionFactory
+							  * * 利用config保存的信息创建SessionFactory,
+							  * * SessionFactory 保存了连接数据库的信息和映射文件的配置信息,预定义的sql语句
+							  *   SessionFactory是线程安全的,最好有一个sessionFactory
+							  */
 					sessionFactory=configuration.buildSessionFactory();
 					extraProperties=null;
 					configuration=null;

@@ -5,6 +5,7 @@
 		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
 		<!-- 配置数据库的方言,通过方言,让计算机知道连接的是哪种数据库 -->
 		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		<!-- 自定义  ConnectionProvider 的类名，此类用来向 Hibernate 提供 JDBC 连接 -->
 		<property name="hibernate.connection.provider_class">org.hibernate.connection.C3P0ConnectionProvider</property>
     	
     	<property name="hibernate.c3p0.max_size">50</property>
@@ -24,12 +25,31 @@
     	<property name="hibernate.c3p0.maxIdleTime">180</property> 
 		
 		<property name="current_session_context_class">thread</property>
+
+		<!--
+			在SessionFactory创建时，自动检查数据库结构，或者将数据库schema的DDL导出到数据库。
+			使用create-drop时，在显式关闭SessionFactory时，将删除掉数据库 schema。
+			* none:
+			   * 如果表存在,不会创建表,直接插入数据到表中
+			   * 如果表不存在,不会创建表,此时不能插入数据到表中
+			*  create:
+			   *  如果表存在,先删除表,在创建表,插入数据到表中
+			   *  如果表不存在,先创建表,再插入数据到表中
+
+			*  update:
+			   *  如果表存在,
+					* 如果由javaBean生成的表和数据库中表的结构没有变化,插入数据到表中
+					* 如果由javaBean生成的表和数据库中表的结构有变化,更新数据库中表的结构,插入数据到表中
+			   *  如果表不存在,先创建表,在插入数据到表中
+		 -->
 		<property name="hbm2ddl.auto">none</property>
+		<!-- 是否在控制台输出sql语句 -->
 		<property name="show_sql">false</property>
 		<property name="connection.useUnicode">true</property>
 		<property name="connection.characterEncoding">UTF-8</property>
 		<property name="connection.characterSetResults">UTF-8</property>
 
+		<!-- 加载映射文件方式一：配置文件（javabean和数据库的表的映射） -->
 		<mapping resource="cn/jsprun/domain/Access.hbm.xml" />
 		<mapping resource="cn/jsprun/domain/Activities.hbm.xml" />
 		<mapping resource="cn/jsprun/domain/Activityapplies.hbm.xml" />
