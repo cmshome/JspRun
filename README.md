@@ -1,8 +1,8 @@
-# HelloWorld  ![:kiss:](https://github.com/jsw0528/rails_emoji/raw/master/vendor/assets/images/emojis/kiss.png)
-
+# JspRun  ![:kiss:](https://github.com/jsw0528/rails_emoji/raw/master/vendor/assets/images/emojis/kiss.png)
+![](https://github.com/cmshome/JspRun/blob/master/1.png)
 
 ## Introduction
-[各种Java相关的测试代码](http://blog.csdn.net/qq_27093465?viewmode=contents)
+此项目是在网上找到的一个MySQL + Hibernate + struts 的一个Java web项目，项目运行起来是一个博客模板项目。
 
 
 ## Life
