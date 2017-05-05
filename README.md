@@ -1,10 +1,7 @@
 # JspRun  ![:kiss:][lips]
 
----
-##项目运行概览示意图：
+## 项目运行概览示意图
 ![](/1.png)
-
----
 
 ## 目录
 * [Introduction](#简要说明)
@@ -28,7 +25,6 @@
 ## Copyright and License
 **The MIT License (MIT)**  
 
-[回到顶部](#jsprun--)
 
 [Email]:http://mail.163.com/ "我的邮箱"
 [Github]:https://github.com/cmshome "我的GitHub"
